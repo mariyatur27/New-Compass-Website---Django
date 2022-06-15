@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %} Compass Tutoring {% endblock %}</title>
+        <!-- CSS files -->
+        <link rel="stylesheet" href="{% static 'css/base/base.css' %}">
         {% block css %}
         {% endblock %}
     </head>
@@ -13,6 +16,8 @@
             {% endblock %}
         </div>
 
+        <!-- JavaScript files -->
+        <script src="{% static 'js/base/base.js' %}"></script>
         {% block js %}
         {% endblock %}
     </body>
