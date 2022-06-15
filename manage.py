@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+
+"""
+SuperUser:
+Username: compass.admin
+Password: Compass12345678900
+"""
+
 import os
 import sys
 
