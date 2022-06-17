@@ -1,0 +1,21 @@
+h1 {
+    font-size: 50px;
+}
+nav#main-navbar {
+    display: flex;
+    background-color: #a0da5c;
+    padding: 1%;
+    justify-content: center;
+}
+#main-navbar a {
+    text-decoration: none;
+    margin-left: 3%;
+    color: black;
+}
+li.navarb-item {
+    list-style: none;
+}
+.uc {
+    display: flex;
+    padding-left: 30%;
+}

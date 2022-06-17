@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/main/homePage_tutor.css' %}">
+{% endblock %}
+
+{% block navbar %}
+    <nav id="main-navbar">
+        <a href=""><li class="navarb-item">About Us</li></a>
+        <a href=""><li class="navarb-item">Our Tutors</li></a>
+        <a href=""><li class="navarb-item">Become a Tutor</li></a>
+        <a href=""><li class="navarb-item">Why Us?</li></a>
+        <div class="uc">
+            <li class="navarb-item uc-it" id="tutor-signup">Sign Up</li>
+            <li class="navarb-item uc-it" id="tutor-login">Log In</li>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <h1>welcome to the homepage</h1>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/main/homePage.js' %}"></script>
+{% endblock %}

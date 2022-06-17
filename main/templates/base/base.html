@@ -12,6 +12,14 @@
         {% endblock %}
     </head>
     <body>
+        <header>
+            {% block navbar %}
+            <nav id="main-navbar">
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About Us</li></a>
+            </nav>
+            {% endblock %}
+        </header>
         <div id="content", name="content">
             {% block content %}
                 <h1> page content not available</h1>
