@@ -7,7 +7,20 @@ nav#main-navbar {
     padding: 1%;
     justify-content: center;
 }
-#main-navbar a {
+nav#main-footer {
+    background-color: #a0da5c;
+    padding: 1%;
+    justify-content: center;
+}
+.nav-links{
+    display: flex;
+}
+#main-navbar a{
+    text-decoration: none;
+    margin-left: 3%;
+    color: black;
+}
+#main-footer a {
     text-decoration: none;
     margin-left: 3%;
     color: black;
@@ -18,4 +31,40 @@ li.navarb-item {
 .uc {
     display: flex;
     padding-left: 30%;
+}
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: xxx-large;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+span.special-styling {
+    font-style: italic;
+    background: -webkit-linear-gradient(#86dc8a, #51a30d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.row{
+    display: flex;
+}
+.service-box {
+    background: #c7e4c7;
+    margin: 2%;
+    width: 60%;
+    padding: 2% 5%;
+    border-radius: 18px;
+}
+.column {
+    width: 50%;
+    text-align: center;
+}
+.client-sec{
+    display: flex;
+}
+.client-box{
+    display: flex;
+}
+.client_info{
+    display: flex;
 }

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    home
+    Compass Tutoring Students
 {% endblock %}
 
 {% block css %}
@@ -26,9 +26,51 @@
 {% endblock %}
 
 {% block content %}
-    <h1>welcome to the homepage</h1>
+    <div class="section" id="services-section">
+        <div class="section-title">Here's what we have to offer to our <span class="special-styling">students</span></div>
+        <div class="row">
+            <div class="column">
+                <div class="service-box" id="sb-1">
+                  <h2>Standard Tutoring Package</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ad aliquid nostrum tenetur, molestias unde optio quae pariatur velit architecto asperiores nobis illo. Ducimus perferendis quo delectus assumenda quidem eveniet!</p>  
+                  <button class="sb-btn">Learn More</button>
+                </div>
+                <div class="service-box" id="sb-2">
+                  <h2>Advanced Tutoring Package</h2> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ad aliquid nostrum tenetur, molestias unde optio quae pariatur velit architecto asperiores nobis illo. Ducimus perferendis quo delectus assumenda quidem eveniet!</p>   
+                  <button class="sb-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="service-box" id="sb-3">
+                    <h2>Personalised Tutoring Package</h2> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ad aliquid nostrum tenetur, molestias unde optio quae pariatur velit architecto asperiores nobis illo. Ducimus perferendis quo delectus assumenda quidem eveniet!</p> 
+                    <button class="sb-btn">Learn More</button>  
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="services-section">
+        <div class="section-title">Here's what we have to offer to our <span class="special-styling">students</span></div>
+        <div class="testimonial-slides"></div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+<nav id="main-footer">
+    <div class="nav-links">
+        <a href=""><li class="navarb-item">About Us</li></a>
+        <a href=""><li class="navarb-item">Our History</li></a>
+        <a href=""><li class="navarb-item">Our Services</li></a>
+        <a href=""><li class="navarb-item">Our Prices</li></a>
+        <a href=""><li class="navarb-item">Testimonials</li></a>
+        <a href=""><li class="navarb-item">Contacts</li></a>
+        <a href=""><li class="navarb-item">Why Us?</li></a>
+    </div>
+</nav>
 {% endblock %}
 
 {% block js %}
-    <script src="{% static 'js/main/homePage.js' %}"></script>
+    <script src="{% static 'js/main/homePage_students.js' %}"></script>
 {% endblock %}
