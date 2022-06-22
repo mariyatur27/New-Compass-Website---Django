@@ -41,8 +41,10 @@ li.navarb-item {
 }
 span.special-styling {
     font-style: italic;
-    background: -webkit-linear-gradient(#86dc8a, #51a30d);
+    /* background: -webkit-linear-gradient(#86dc8a, #51a30d); */
+    background-image: linear-gradient(85deg, #4caf50 12%, #a2d665 50%, #8ace69 91%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .row{

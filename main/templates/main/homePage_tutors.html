@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'css/main/homePage_tutor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/homePage_students.css' %}">
 {% endblock %}
 
 {% block navbar %}
@@ -23,9 +23,12 @@
 {% endblock %}
 
 {% block content %}
-    <h1>welcome to the homepage</h1>
+    <div class="section" id="testimonial-section">
+        <div class="section-title">Here's what we have to offer to our <span class="special-styling">tutors</span> have to say</div>
+        <div class="testimonial-slides"></div>
+    </div>
 {% endblock %}
 
 {% block js %}
-    <script src="{% static 'js/main/homePage.js' %}"></script>
+    <script src="{% static 'js/main/homePage_tutors.js' %}"></script>
 {% endblock %}
