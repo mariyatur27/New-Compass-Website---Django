@@ -36,7 +36,7 @@ const testimonials = [
     }
 ]
 
-var location = document.getElementById('testimonial-slides');
+var testimonial_div = document.getElementById('testimonial-slides');
 
 for (const block of testimonials) {
     console.log(block)
@@ -62,5 +62,5 @@ for (const block of testimonials) {
             let next_arr = document.createElement('div'); next_arr.innerHTML='Next';
             client_sec.appendChild(next_arr);
         t_box.appendChild(client_sec);
-    location.appendChild(t_box);
+    testimonial_div.appendChild(t_box);
 }

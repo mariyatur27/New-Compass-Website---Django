@@ -22,16 +22,15 @@ const tutor_testimonial = [
     }
 ]
 
-var location = document.getElementById('testimonial-section');
+var testimonial_div = document.getElementById('testimonial-section');
 
-tutor_testimonial.forEach(testimonial => {
-    for(let info in testimonial){
-        let t_box = document.createElement('div'); t_box.classList.add('testimonial-box');
-        t_box.style.color = info.color; t_box.classList.add(block.class);
+tutor_testimonial.forEach(info => {
+    console.log(info);
+    let t_box = document.createElement('div'); t_box.classList.add('testimonial-box');
+    t_box.style.color = info.color; t_box.classList.add(info.class);
 
-        t_box.appendChild(client_sec);
-        // location.appendChild(t_box);
-    }
+    //t_box.appendChild(client_sec);
+    testimonial_div.appendChild(t_box);
 })
 
 // for (const info in tutor_testimonial){
@@ -57,5 +56,5 @@ tutor_testimonial.forEach(testimonial => {
         //     let next_arr = document.createElement('div'); next_arr.innerHTML='Next';
         //     client_sec.appendChild(next_arr);
 //         t_box.appendChild(client_sec);
-//     location.appendChild(t_box);
+//     not_location.appendChild(t_box);
 // }
