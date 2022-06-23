@@ -61,12 +61,28 @@ span.special-styling {
     width: 50%;
     text-align: center;
 }
-.client-sec{
-    display: flex;
+.testimonial-box.active {
+    padding: 13%;
+    opacity: 74%;
+    margin-bottom: 10%;
+    display: block;
+}
+.text-section p {
+    font-size: xx-large;
+    text-align: center;
 }
 .client-box{
     display: flex;
 }
-.client_info{
+.testimonial-box{
+    display: none;
+}
+.client-sec {
     display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+img.client-icon {
+    width: 9%;
+    margin-right: 2%;
 }
