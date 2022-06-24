@@ -127,3 +127,52 @@ img.column-img {
     width: 97%;
     margin-bottom: 14%;
 }
+img.profile-img {
+    border-radius: 50%;
+    width: 50%;
+    margin-left: 22%;
+    margin-bottom: 16%;
+}
+.tutor-profile {
+    background-color: #C9F4CA;
+    padding: 8%;
+    margin: 10%;
+    border-radius: 33px;
+}
+.dashboard-column {
+    width: 32%;
+}
+.profile-info {
+    margin-bottom: 20%;
+}
+.profile-info h4 {
+    font-weight: 400;
+    font-size: large;
+}
+button.tutor-org-btn {
+    border: none;
+    background-color: #c9f4ca;
+    border-radius: 33px;
+    padding: 3% 11%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.tutor-organizer , .progress-box{
+    margin: 10%;
+}
+.section-subtitle{
+    text-align: center;
+    font-weight: 500;
+}
+.student-requests-state {
+    box-shadow: 0 8px 24px 0 rgb(0 48 204 / 8%);
+    padding: 7%;
+    text-align: center;
+    margin-top: 7%;
+}
+.progress-bar {
+    background-color: #e7e7e7;
+    border-radius: 33px;
+    margin-top: 2%;
+    padding: 1.7%;
+}

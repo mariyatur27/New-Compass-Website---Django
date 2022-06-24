@@ -22,7 +22,50 @@
 {% endblock %}
 
 {% block content %}
+<div class="section-title" style="font-weight: 200;">Tutor Dashboard</div>
+<div class="tutor-dashboard" id="tutor-dashboard">
+    <div class="row">
+        <div class="dashboard-column">
+            <div class="tutor-profile">
+                <img class="profile-img" src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png">
+                <div class="profile-info">
+                    <h4>Name: </h4><br>
+                    <h4>Subjects: </h4><br>
+                    <h4>Experience: </h4><br>
+                    <h4>Status: </h4>
+                </div>
+            </div>
+        </div>
 
+        <div class="dashboard-column">
+            <div class="progress-box">
+                <div class="box-label">Status Progress: </div>
+                <div class="progress-bar">0%</div>
+            </div>
+            <div class="progress-box">
+                <div class="box-label">Session Progress: </div>
+                <div class="progress-bar">0%</div>
+            </div>
+            <div class="progress-box">
+                <div class="box-label">Payment Progress: </div>
+                <div class="progress-bar">0%</div>
+            </div>
+        </div>
+
+        <div class="dashboard-column">
+            <div class="tutor-organizer">
+                <button class="tutor-org-btn">Tutor Hour Log-Book</button><br>
+                <button class="tutor-org-btn">Session Time-Table</button><br>
+                <button class="tutor-org-btn">Student Portfolio</button><br>
+                <button class="tutor-org-btn">Payment History</button>
+            </div>
+            <div class="student-requests">
+                <div class="section-subtitle">Student Requests:</div>
+                <div class="student-requests-state">No Requests</div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block js %}
