@@ -64,7 +64,7 @@ span.special-styling {
 .testimonial-box.active {
     padding: 13%;
     opacity: 74%;
-    margin-bottom: 10%;
+    margin-bottom: -8%;    
     display: block;
 }
 .text-section p {
@@ -85,4 +85,45 @@ span.special-styling {
 img.client-icon {
     width: 9%;
     margin-right: 2%;
+}
+div#make-account-section {
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    padding: 7% 8%;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 10%;
+    box-shadow: 0 8px 24px 0 rgb(0 48 204 / 8%);
+    margin-left: 20%;
+    position: absolute;
+}
+button.main-btn {
+    width: 32%;
+    margin-right: 1%;
+    padding: 1%;
+    border-radius: 33px;
+    background-color: #e8ffe8;
+    border-color: #149a14;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: 500;
+}
+.sub-column {
+    box-shadow: 0 8px 24px 0 rgb(0 48 204 / 8%);
+    width: 70%;
+    padding: 5% 6%;
+    border-radius: 33px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.right {
+    margin-left: 27%;
+}
+.top{
+    margin-top: 43%;
+}
+img.column-img {
+    width: 97%;
+    margin-bottom: 14%;
 }

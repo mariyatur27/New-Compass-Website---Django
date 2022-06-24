@@ -60,16 +60,16 @@ tutor_testimonial.forEach(info => {
 //Code for the slideshow
 var slides = document.querySelectorAll('.testimonial-box');
 let index = 0;
-
-const activeSlide = n => {
+    
+const activeSlide = index => {
     for(i of slides){
         i.classList.remove('active');
     }
-    slides[n].classList.add('active');
+    slides[index].classList.add('active');
 }
 
 const nextSlide = () => {
-    if (index == slides.length){
+    if (index == slides.length - 1){
         index = 0;
         activeSlide(index);
     }else{
@@ -77,5 +77,6 @@ const nextSlide = () => {
         activeSlide(index);
     }
 }
+
 
 setInterval(nextSlide, 6000);
