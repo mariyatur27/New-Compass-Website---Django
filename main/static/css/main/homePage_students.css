@@ -176,3 +176,14 @@ button.tutor-org-btn {
     margin-top: 2%;
     padding: 1.7%;
 }
+form {
+    background-color: #C9F4CA;
+    padding: 4%;
+    width: 70%;
+    border-radius: 40px;
+}
+input {
+    padding: 0.5% 6%;
+    border-radius: 33px;
+    border-style: solid;
+}
