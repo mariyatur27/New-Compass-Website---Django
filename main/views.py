@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .forms import tutorRegForm
-from .models import TutorInfo
+'''from .forms import tutorRegForm
+from .models import TutorInfo'''
 from django.http import HttpResponseRedirect
 
 # Create your views here.
-def tutor_signup(request):
+'''def tutor_signup(request):
     submitted = False
     if request.method == 'POST':
         form = tutorRegForm(request.POST)
@@ -18,7 +18,7 @@ def tutor_signup(request):
         if 'submitted' in request.GET:
             submitted = True
     return render(request, 'main/tutors/signup.html', {'form':form, 'submitted': submitted})
-
+'''
 def homePage_tutors(response):
     return render(response, "main/homePage_tutors.html", {})
 

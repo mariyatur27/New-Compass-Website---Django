@@ -6,7 +6,10 @@ from django.contrib.auth.models import User
 
 class StudentRegisterForm(UserCreationForm):
     email = forms.EmailField()
+    type = forms.ChoiceField(
+        choices=[('STUDENT', 'STUDENT'), ('TUTOR', 'TUTOR')]
+    )
 
     class Meta:
         model = User
-        fields = ["username", "email", "password1", "password2"]
+        fields = ["username", "email", "type", "password1", "password2"]

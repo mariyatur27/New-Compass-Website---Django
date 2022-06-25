@@ -12,7 +12,7 @@ def studentSignUp(response):
         if form.is_valid():
             form.save()
 
-        return redirect('home/')  # ToDO
+        return redirect('/home/')  # ToDO
     else:
         form = forms.StudentRegisterForm()
     return render(response, "register/studentSignUp.html", {'form': form})
