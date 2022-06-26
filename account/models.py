@@ -66,3 +66,11 @@ class Account(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
+
+
+class PaymentHistory(models.Model):
+    user = models.OneToOneField(Account, on_delete=models.CASCADE)
+    card_number = models.CharField(max_length=12)
+    amount = models.FloatField(max_length=6)
+    amount_plus_tax = models.FloatField(max_length=6)
+    date = models.DateTimeField(auto_now_add=True)

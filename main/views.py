@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 '''from .forms import tutorRegForm
 from .models import TutorInfo'''
 from django.http import HttpResponseRedirect
@@ -19,14 +20,21 @@ from django.http import HttpResponseRedirect
             submitted = True
     return render(request, 'main/tutors/signup.html', {'form':form, 'submitted': submitted})
 '''
-def homePage_tutors(response):
-    return render(response, "main/homePage_tutors.html", {})
-
-def homePage_students(response):
-    return render(response, "main/homePage_students.html", {})
 
 
-def tutor_dashboard(response):
+def homePage(response):
+    return render(response, "main/homePage.html", {})
+
+
+def tutors(response):
+    return render(response, "main/tutors.html", {})
+
+
+def students(response):
+    return render(response, "main/students.html", {})
+
+
+'''def tutor_dashboard(response):
     return render(response, "main/tutors/dashboard.html", {})
 
 
@@ -44,3 +52,4 @@ def time_table(response):
 
 def hour_logbook(response):
     return render(response, "main/tutors/hour_logbook.html", {})
+'''
